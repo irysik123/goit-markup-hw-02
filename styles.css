@@ -42,6 +42,11 @@ body {
     color: var(--main-text-color);  
 }
 
+.link:hover,
+:focus {
+        color: var(--main-text-color);  
+}
+
 .link {
     text-decoration: none;
 }
