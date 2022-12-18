@@ -45,12 +45,12 @@ body {
 
 .menu-item:hover,
 :focus {
-        color: var(--button-text-color) ;
+    color: var(--button-text-color);
 }
 
 .contacts-item:hover,
 :focus {
-        color: var(--button-text-color) ;
+    color: var(--button-text-color);
 }
 
 .link {
