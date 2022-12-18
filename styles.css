@@ -2,16 +2,17 @@
     --main-text-color: #2E2F42;
     --button-main-color: #E7E9FC;
     --button-text-color: #4D5AE5;
-    --main-white-color: #FFFFFF;
+    --button-dark-color: #404BBF;
     --text-color: #434455;
     --white-color: #FFFFFF;
     --footer-color: #E7E9FC;
     --logo-white-color: #F4F4FD;
+    --second-header-color: #2E2F42;
 }
 
 body {
     border-color: var(--white-color);
-    color: black;
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,7 +22,7 @@ body {
 }
 
 .logo-item {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -32,7 +33,7 @@ body {
 }
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -42,9 +43,14 @@ body {
     color: var(--main-text-color);  
 }
 
-.link:hover,
+.menu-item:hover,
 :focus {
-        color: var(--main-text-color);  
+        color: var(--button-text-color) ;
+}
+
+.contacts-item:hover,
+:focus {
+        color: var(--button-text-color) ;
 }
 
 .link {
@@ -74,7 +80,7 @@ body {
 }
 
 .hero-title {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -94,12 +100,18 @@ body {
     border-radius: 10%;
 
     background-color: var(--button-text-color);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.04em;
 
+    color: var(--white-color);
+}
+
+.hero-button:hover,
+:focus{
+    background-color: var(--button-dark-color);
     color: var(--white-color);
 }
 
@@ -133,6 +145,7 @@ body {
     color: var(--main-text-color);
 }
 
+.skills-list-title,
 .team-title-small,
 .filter-title-small {
     font-weight: 600;
@@ -140,7 +153,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    color: var(--main-text-color);
+    color: var(--second-header-color);
 }
 
 .team-description,
@@ -198,6 +211,6 @@ body {
 
 .filter-button:hover,
 :focus {
-    color: var(--main-white-color);
+    color: var(--white-color);
     background-color: var(--button-text-color)
 }
